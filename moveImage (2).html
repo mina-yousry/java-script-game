@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <script src="moveImage.js"></script>
+    <link href="style.css" rel="stylesheet" />
+
+</head>
+<body onmousemove="moveImage(event)" class="bg" >
+
+<div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <!-- <span class="close">&times;</span>-->
+            <h2></h2>
+        </div>
+        <div class="modal-body">
+            <p></p>
+        </div>
+        <div class="modal-footer">
+            <button name="playAgain" value="Play Again" class="btn" onclick="onTimer()">Play Again</button>
+</div>
+</div>
+</div>
+
+<div align="center">
+    <h1 class="header" id="score">Score : 0 </h1>
+    <h2 class="header" id="timer"></h2>
+    <button class="btn" id="btnStart" onclick="onTimer()">Start Game</button>
+</div>
+<button class="btnBack" id="btnBack" onclick="home.html">Back</button>
+<img id="shark" src="shark.png" width="220" height="120" style="position:absolute; right: 200;">
+<img id="fish" align="right" src="fish.png" width="70" height="70" style="position:absolute;">
+<img id="ball" src="ball.png" width="25" height="30" style="position:absolute; left: 400px; top:400; ">
+</body>
+
+</html>
